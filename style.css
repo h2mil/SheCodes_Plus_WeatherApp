@@ -58,9 +58,9 @@ main {
   justify-content: space-between;
 }
 .current-city {
-  font-size: 38px;
+  font-size: 40px;
   line-height: 48px;
-  font-weight: bold;
+  font-weight: 800;
 }
 .current-weather-details {
   font-size: 16px;
@@ -73,19 +73,21 @@ main {
 }
 .current-temperature {
   line-height: 78px;
-  font-weight: bold;
   display: flex;
   justify-content: end;
-  padding-top: 20px;
+  padding-top: 25px;
 }
 .weather-icon {
   font-size: 55px;
+  margin-right: 10px;
 }
 .temperature-value {
   font-size: 78px;
+  font-weight: bold;
 }
 .temperature-unit {
   font-size: 28px;
+  margin-top: -17px;
 }
 footer {
   border-top: 1px solid #d5def5;

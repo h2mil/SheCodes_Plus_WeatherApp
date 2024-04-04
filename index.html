@@ -15,12 +15,13 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Enter a city"
             required
             class="search-input"
+            id="search-input"
           />
           <input type="submit" value="Search" class="submit-button" />
         </form>
@@ -28,7 +29,7 @@
       <main>
         <div class="weather-data">
           <div>
-            <h1 class="current-city">Basel</h1>
+            <h1 class="current-city" id="current-city">Basel</h1>
             <p class="current-weather-details">
               Tuesday 13:53, broken clouds <br />Humidity: <strong>64%</strong>,
               Wind: <strong>7.72km/h</strong>

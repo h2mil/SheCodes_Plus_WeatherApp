@@ -78,8 +78,8 @@ main {
   padding-top: 25px;
 }
 .weather-icon {
-  font-size: 55px;
-  margin-right: 10px;
+  width: 75px;
+  height: 75px;
 }
 .temperature-value {
   font-size: 78px;

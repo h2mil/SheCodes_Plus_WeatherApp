@@ -20,3 +20,5 @@ function displaySubmitElement(event) {
 
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", displaySubmitElement);
+
+searchCity("Basel");

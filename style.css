@@ -89,6 +89,23 @@ main {
   font-size: 28px;
   margin-top: -17px;
 }
+.weather-forecast {
+  margin-top: 30px;
+}
+.weather-forecast-day {
+  font-size: 16px;
+  color: rgba(39, 33, 66, 0.4);
+  line-height: 20px;
+  margin-bottom: 10px;
+}
+.weather-forecast-icon {
+  display: block;
+  margin: 0 auto;
+}
+.weather-forecast-maxi-mini {
+  color: #ff5da2;
+  font-size: 13px;
+}
 footer {
   border-top: 1px solid #d5def5;
   padding-top: 10px;

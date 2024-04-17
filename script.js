@@ -51,7 +51,29 @@ function displaySubmitElement(event) {
   searchCity(searchInput.value);
 }
 
+function displayForecast() {
+  let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
+  let forecastHtml = "";
+  days.forEach(function (day) {
+    forecastHtml =
+      forecastHtml +
+      `<div class="weather-forecast-column">
+    <div class="weather-forecast-day">${day}</div>
+    <div class="weather-forecast-icon">
+    <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/rain-day.png" width="40">
+    </div>
+    <div class="weather-forecast-maxi-mini">
+    <span class="daily-max"><strong>18°</strong></span>
+    <span class="daily-min">12°</span>
+    </div>
+    `;
+  });
+  forecastElement.innerHTML = forecastHtml;
+}
+
+let forecastElement = document.querySelector("#forecast");
 let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", displaySubmitElement);
 
 searchCity("Basel");
+displayForecast();

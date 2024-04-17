@@ -90,20 +90,20 @@ main {
   margin-top: -17px;
 }
 .weather-forecast {
-  margin-top: 30px;
-  text-align: center;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  margin-top: 30px;
 }
 .weather-forecast-day {
   font-size: 16px;
   color: rgba(39, 33, 66, 0.4);
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-top: 20px;
+  text-align: center;
 }
 .weather-forecast-icon {
-  display: block;
-  margin: 0 auto;
+  font-size: 38px;
+  text-align: center;
 }
 .weather-forecast-maxi-mini {
   color: #ff5da2;

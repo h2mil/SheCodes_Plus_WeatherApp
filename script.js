@@ -16,6 +16,8 @@ function updateTemperature(response) {
   windSpeed.innerHTML = `${Math.round(response.data.wind.speed)}km/h`;
   currentTime.innerHTML = formatDate(new Date());
   weatherIcon.innerHTML = `<img src="${response.data.condition.icon_url}" class="weather-icon" />`;
+
+  getForecast(response.data.city);
 }
 
 function formatDate(date) {
@@ -51,7 +53,15 @@ function displaySubmitElement(event) {
   searchCity(searchInput.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "308ea326edf2b15o6tb4107799647841";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
+
   let days = ["Wed", "Thu", "Fri", "Sat", "Sun"];
   let forecastHtml = "";
   days.forEach(function (day) {
@@ -76,4 +86,3 @@ let searchElement = document.querySelector("#search-form");
 searchElement.addEventListener("submit", displaySubmitElement);
 
 searchCity("Basel");
-displayForecast();

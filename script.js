@@ -65,7 +65,7 @@ function displayForecast() {
     <div class="weather-forecast-maxi-mini">
     <span class="daily-max"><strong>18°</strong></span>
     <span class="daily-min">12°</span>
-    </div>
+    </div></div>
     `;
   });
   forecastElement.innerHTML = forecastHtml;
